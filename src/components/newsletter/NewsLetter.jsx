@@ -4,7 +4,7 @@ function NewsLetter() {
   return (
     <div className="container z-30 absolute -top-20 mt-10">
       <div
-        className="w-4/5 mx-auto bg-white flex flex-col justify-center items-center border rounded-md py-14"
+        className="w-4/5 mx-auto bg-white flex flex-col justify-center items-center border rounded-md py-14 text-center"
         style={{ backgroundImage: `url(${bg})` }}
       >
         <h2 className="font-bold text-2xl">Subscribe to our Newsletter</h2>

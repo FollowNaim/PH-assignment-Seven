@@ -1,17 +1,15 @@
+import flag from "@/assets/flag.png";
+import user1 from "@/assets/user1.png";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Virat from "@/assets/virat.png";
-import user1 from "@/assets/user1.png";
-import flag from "@/assets/flag.png";
 import { Button } from "../ui/button";
 
-function PlayerCard({ player }) {
+function PlayerCard({ player, handPlayerAdd }) {
   const {
     id,
     player_name,
@@ -25,9 +23,9 @@ function PlayerCard({ player }) {
   return (
     <div>
       <Card className="shadow-sm">
-        <CardHeader>
+        <CardHeader className="p-4 md:p-6">
           <img
-            className="rounded-xl w-full h-56 object-cover"
+            className="rounded-xl w-full h-56 md:h-56  object-cover"
             src={player_img}
             alt=""
           />
@@ -53,7 +51,7 @@ function PlayerCard({ player }) {
             </div>
           </CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent className="p-4 md:p-6">
           <div className="flex flex-col gap-4">
             <div className="flex items-center justify-between">
               <h4 className="font-semibold">Rating</h4>
@@ -66,9 +64,13 @@ function PlayerCard({ player }) {
             <div className="flex items-center justify-between">
               <h4 className="font-semibold">
                 Price :{" "}
-                <span className="ml-1 font-medium text-black/90">{price}</span>
+                <span className="ml-1 font-medium text-black/90">${price}</span>
               </h4>
-              <Button variant="outline" className="hover:bg-[#E7FE29]">
+              <Button
+                onClick={() => handPlayerAdd(player)}
+                variant="outline"
+                className="hover:bg-[#E7FE29]"
+              >
                 Choose Player
               </Button>
             </div>

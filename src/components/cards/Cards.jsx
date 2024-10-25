@@ -3,38 +3,54 @@ import PlayerCard from "../card/PlayerCard";
 import Selected from "../selected/Selected";
 import { Button } from "../ui/button";
 
-function Cards({ players }) {
+function Cards({
+  players,
+  handPlayerAdd,
+  selectedLength,
+  selectedPlayer,
+  handlePlayerRemove,
+}) {
   const [isSelectedOpen, setIsSelectedOpen] = useState(false);
 
   return (
-    <div className="mt-20 container px-4 mb-64">
-      <div className="flex justify-between items-center my-6">
-        <h2 className="text-xl font-bold">Available Players</h2>
-        <div>
-          <Button
-            onClick={() => setIsSelectedOpen(false)}
-            className={`rounded-l-md rounded-r-none ${
-              isSelectedOpen ? "bg-transparent" : "bg-[#E7FE29]"
-            } hover:bg-[#e7fe29] text-black`}
-          >
-            Available
-          </Button>
-          <Button
-            onClick={() => setIsSelectedOpen(true)}
-            className={`rounded-l-none  rounded-r-md ${
-              isSelectedOpen ? "bg-[#E7FE29]" : "bg-transparent"
-            } hover:bg-[#e7fe29] text-black/60"`}
-          >
-            Selected <span>(0)</span>
-          </Button>
-        </div>
+    <div className="mt-20 container px-2 md:px-4 mb-64">
+      {/* <div className="flex justify-between items-center my-6 sticky top-20">
+        <h2 className="text-xl flex font-bold flex-1">Available Players</h2>
+        
+      </div> */}
+      <h2 className="text-xl w-fit flex font-bold flex-1">Available Players</h2>
+
+      <div className="flex w-fit mt-7 md:mt0 md:-mt-10 mb-10 ml-auto justify-end sticky top-20 h-fit">
+        <Button
+          onClick={() => setIsSelectedOpen(false)}
+          className={`rounded-l-md rounded-r-none ${
+            isSelectedOpen ? "bg-white" : "bg-[#E7FE29]"
+          } hover:bg-[#e7fe29] text-black`}
+        >
+          Available
+        </Button>
+        <Button
+          onClick={() => setIsSelectedOpen(true)}
+          className={`rounded-l-none  rounded-r-md ${
+            isSelectedOpen ? "bg-[#E7FE29]" : "bg-white"
+          } hover:bg-[#e7fe29] text-black/60"`}
+        >
+          Selected <span>({selectedLength})</span>
+        </Button>
       </div>
       {isSelectedOpen ? (
-        <Selected />
+        <Selected
+          selectedPlayer={selectedPlayer}
+          handlePlayerRemove={handlePlayerRemove}
+        />
       ) : (
-        <div className="grid grid-cols-3 gap-3 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">
           {players.map((player) => (
-            <PlayerCard key={player.id} player={player} />
+            <PlayerCard
+              handPlayerAdd={handPlayerAdd}
+              key={player.id}
+              player={player}
+            />
           ))}
         </div>
       )}
