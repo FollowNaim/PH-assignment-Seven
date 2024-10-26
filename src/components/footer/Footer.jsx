@@ -47,7 +47,7 @@ function Footer() {
         <div className="border-t border-white/10 py-5">
           <div>
             <p className="text-white/60 text-center">
-              @2024 Your Company All Rights Reserved.
+              @2024 BPL-DREAM 11 All Rights Reserved.
             </p>
           </div>
         </div>
