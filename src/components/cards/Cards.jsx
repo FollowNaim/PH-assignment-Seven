@@ -13,8 +13,12 @@ function Cards({
   const [isSelectedOpen, setIsSelectedOpen] = useState(false);
 
   return (
-    <div className="mt-20 container md:px-4 mb-64">
-      <h2 className="text-xl w-fit flex font-bold flex-1">Available Players</h2>
+    <div className="mt-20 container px-4 mb-64">
+      <h2 className="text-xl w-fit flex font-bold flex-1">
+        {isSelectedOpen
+          ? `Selected Players (${selectedPlayer.length}/6)`
+          : "Available Players"}
+      </h2>
 
       <div className="flex w-fit mt-7 md:mt0 md:-mt-10 mb-10 ml-auto justify-end sticky top-20 h-fit z-20">
         <Button

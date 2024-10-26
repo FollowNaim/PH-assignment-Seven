@@ -1,6 +1,6 @@
 # BPL-DREAM 11
 
-Welcome to **<img width="30px" src="src/assets/logo.png"/> BPL-DREAM 11 BPL-DREAM 11** – a dynamic React-based application designed to help users build and manage their dream cricket team with ease. Inspired by a Figma design, this app offers intuitive player selection, real-time validation, and engaging notifications for an interactive user experience.
+Welcome to **<img width="30px" src="src/assets/logo.png"/> BPL-DREAM 11** - [Live Link](https://ph-assignment7.surge.sh/) – a dynamic React-based application designed to help users build and manage their dream cricket team with ease. Inspired by a Figma design, this app offers intuitive player selection, real-time validation, and engaging notifications for an interactive user experience.
 
 ## 📜 Project Description
 
