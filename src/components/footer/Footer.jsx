@@ -14,8 +14,8 @@ function Footer() {
             <div className="md:col-span-2">
               <h2>About us</h2>
               <p className="text-white/60 w-4/5 mt-4">
-                We are a passionate team dedicated to providing the best
-                services to our customers.
+                Where Passion Meets the Pitch – Bringing You Closer to the
+                Thrills, Skills, and Spirit of the Bangladesh Premier League.
               </p>
             </div>
             <div className="md:col-span-1">

@@ -13,7 +13,9 @@ function Hero({ handleCoin }) {
           <h1 className="text-3xl font-bold mt-6">
             Assemble Your Ultimate Dream 11 Cricket Team
           </h1>
-          <p className="text-white/70 mt-4">Beyond Boundaries Beyond Limits</p>
+          <p className="text-white/70 mt-4">
+            Choose Your Champions, Own the Game
+          </p>
 
           <div className="rounded-lg border border-[#e7fe29] p-2 mt-6">
             <button
