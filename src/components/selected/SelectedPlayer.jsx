@@ -19,7 +19,7 @@ function SelectedPlayer({ player, handlePlayerRemove }) {
         </div>
         <div
           className="cursor-pointer"
-          onClick={() => handlePlayerRemove(player.id)}
+          onClick={() => handlePlayerRemove(player.id, player_name)}
         >
           <img className="w-8" src={deleteImg} alt="" />
         </div>

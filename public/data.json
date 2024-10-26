@@ -5,7 +5,7 @@
     "country": "Bangladesh",
     "batting_style": "Left Hand",
     "role": "All Rounder",
-    "price": "$350,000",
+    "price": "350,000",
     "player_img": "https://i.ibb.co.com/fFgX94K/images-q-tbn-ANd9-Gc-Sr-IYvw-N1pz-Yp-Ph-Mu-Xv-NYQH2n-Q4-S5-KYmy-UH02-QHRki-Pqq-Rrn-EOt-SM5j-j-Y9v-JA.jpg",
     "rating": 9.2
   },
@@ -15,7 +15,7 @@
     "country": "India",
     "batting_style": "Right Hand",
     "role": "Batter",
-    "price": "$500,000",
+    "price": "500,000",
     "player_img": "https://i.ibb.co.com/3FnK82T/images-q-tbn-ANd9-Gc-Rkxb-Opqo7-UFGelc0-DXEgcej5-Pckop-VSVCm-RQ-s.jpg",
     "rating": 9.8
   },
@@ -25,7 +25,7 @@
     "country": "Bangladesh",
     "batting_style": "Left Hand",
     "role": "Batter",
-    "price": "$300,000",
+    "price": "300,000",
     "player_img": "https://i.ibb.co.com/VwttT7t/images-q-tbn-ANd9-Gc-Ra5mz-XW2b-FZf-Rd-OG2ae-P4wx6ti4-oek-Koxw-s.jpg",
     "rating": 8.7
   },
@@ -35,7 +35,7 @@
     "country": "India",
     "batting_style": "Right Hand",
     "role": "Batter",
-    "price": "$450,000",
+    "price": "450,000",
     "player_img": "https://i.ibb.co.com/3p0qpZY/images-q-tbn-ANd9-Gc-Ru-CVx-Rc8rx-Ct4om-Nj-Qpkvj-ZA54-MVPx-Ye-ISQ-s.jpg",
     "rating": 9.6
   },
@@ -45,7 +45,7 @@
     "country": "Bangladesh",
     "batting_style": "Left Hand",
     "role": "Bowler",
-    "price": "$200,000",
+    "price": "200,000",
     "player_img": "https://i.ibb.co.com/Bs10MS2/images-q-tbn-ANd9-Gc-Ty8nj-F4e-Lmff-BBfzcl-Oh-CYS6cn7n8han-Bqi-A-s.jpg",
     "rating": 8.3
   },
@@ -55,62 +55,38 @@
     "country": "Bangladesh",
     "batting_style": "Right Hand",
     "role": "All Rounder",
-    "price": "$250,000",
+    "price": "250,000",
     "player_img": "https://i.ibb.co.com/5KLrQSW/images-q-tbn-ANd9-Gc-S2-Rzsn-MQAIRUDguu-h-Dmj-JBR7-H8-Sgz-XKm-H-A-s.jpg",
     "rating": 8.8
   },
   {
+    "id": "7",
     "player_name": "Jasprit Bumrah",
     "country": "India",
     "batting_style": "Right Hand",
     "role": "Bowler",
-    "price": "$400,000",
+    "price": "400,000",
     "player_img": "https://i.ibb.co.com/cFvCXBT/images-q-tbn-ANd9-Gc-S5-Wb-Kl-OSdj-IMVya0-O4n-IYb-X-jr-ed-HEXeo-A-s.jpg",
     "rating": 9.5
   },
   {
-    "player_name": "KL Rahul",
-    "country": "India",
-    "batting_style": "Right Hand",
-    "role": "Batter",
-    "price": "$400,000",
-    "player_img": "https://i.ibb.co/W0KVLg0/KL-Rahul.jpg",
-    "rating": 9.0
-  },
-  {
-    "player_name": "Taskin Ahmed",
-    "country": "Bangladesh",
-    "batting_style": "Right Hand",
-    "role": "Bowler",
-    "price": "$220,000",
-    "player_img": "https://i.ibb.co/CJZYT9T/Taskin-Ahmed.jpg",
-    "rating": 8.5
-  },
-  {
-    "player_name": "Ravindra Jadeja",
-    "country": "India",
-    "batting_style": "Left Hand",
-    "role": "All Rounder",
-    "price": "$500,000",
-    "player_img": "https://i.ibb.co/CM97PPp/Ravindra-Jadeja.jpg",
-    "rating": 9.7
-  },
-  {
+    "id": "8",
     "player_name": "Liton Das",
     "country": "Bangladesh",
     "batting_style": "Right Hand",
     "role": "Batter",
-    "price": "$280,000",
-    "player_img": "https://i.ibb.co/qYcjc2K/Liton-Das.jpg",
+    "price": "280,000",
+    "player_img": "https://i.ibb.co.com/Y7gWJ0f/images-q-tbn-ANd9-Gc-Qw-KDFld-M3l-Ircr-PK7-TU24-Ezo-WRCem-CV2-UTcg-s.jpg",
     "rating": 8.9
   },
   {
-    "player_name": "Hardik Pandya",
-    "country": "India",
+    "id": "9",
+    "player_name": "Taskin Ahmed",
+    "country": "Bangladesh",
     "batting_style": "Right Hand",
-    "role": "All Rounder",
-    "price": "$450,000",
-    "player_img": "https://i.ibb.co/8cxJzk7/Hardik-Pandya.jpg",
-    "rating": 9.4
+    "role": "Bowler",
+    "price": "220,000",
+    "player_img": "https://i.ibb.co.com/pwDkF5J/images-q-tbn-ANd9-Gc-RCzjf-aeyl-VUag-GPK81-Ycim-O79cmzsp-Nf5x-A-s.jpg",
+    "rating": 8.5
   }
 ]

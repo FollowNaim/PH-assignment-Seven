@@ -4,9 +4,9 @@ import { Button } from "../ui/button";
 function Hero({ handleCoin }) {
   return (
     <div>
-      <div className="container mt-4">
+      <div className="container mt-4 px-4">
         <div
-          className="bg-black flex flex-col justify-center items-center text-white py-12  bg-no-repeat bg-cover text-center"
+          className="bg-black flex flex-col justify-center items-center text-white py-12  bg-no-repeat bg-cover text-center rounded-md"
           style={{ backgroundImage: `url(${banner})` }}
         >
           <img src={bannerMain} alt="" />
@@ -15,12 +15,14 @@ function Hero({ handleCoin }) {
           </h1>
           <p className="text-white/70 mt-4">Beyond Boundaries Beyond Limits</p>
 
-          <Button
-            onClick={() => handleCoin(6600000)}
-            className="mt-6 bg-[#E7FE29] text-black hover:text-white"
-          >
-            Claim your free credit
-          </Button>
+          <div className="rounded-lg border border-[#e7fe29] p-2 mt-6">
+            <button
+              className="px-6 rounded-lg py-2 bg-[#E7FE29] font-semibold text-black hover:bg-[#cee12a] transform transition-transform duration-150 ease-in-out active:scale-90"
+              onClick={() => handleCoin(6600000)}
+            >
+              Claim free credit
+            </button>
+          </div>
         </div>
       </div>
     </div>

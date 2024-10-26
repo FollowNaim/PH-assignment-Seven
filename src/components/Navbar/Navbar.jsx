@@ -6,10 +6,12 @@ import { Button } from "../ui/button";
 function Navbar({ coin }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="sticky top-0 bg-white/70 w-full backdrop-blur-lg z-50">
-      <div className="container px-4 pt-3 flex justify-between items-center">
+    <header className="sticky top-0 bg-white/70 w-full backdrop-blur-lg z-50">
+      <div className="container px-4 pt-2 pb-2 flex justify-between items-center">
         <div>
-          <img className="w-14" src={Logo} alt="" />
+          <a href="https://ph-assignment7.surge.sh/">
+            <img className="w-14" src={Logo} alt="" />
+          </a>
         </div>
         <div className="flex items-center gap-8">
           <div className="hidden md:block">
@@ -35,8 +37,8 @@ function Navbar({ coin }) {
         </div>
       </div>
       <div
-        className={`absolute block md:hidden z-50 bg-lime-50 top-0 w-4/5 h-screen transition-position duration-300 ease-in-out cursor-pointer ${
-          isOpen ? "right-0" : "-right-full"
+        className={`absolute z-[9999] bg-lime-50 top-0 w-4/5 h-screen transition-position duration-300 ease-in-out cursor-pointer ${
+          isOpen ? "right-0 block" : "-right-full hidden"
         }`}
       >
         <div
@@ -52,7 +54,7 @@ function Navbar({ coin }) {
           <li>Schedule</li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 }
 

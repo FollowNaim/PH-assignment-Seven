@@ -13,14 +13,10 @@ function Cards({
   const [isSelectedOpen, setIsSelectedOpen] = useState(false);
 
   return (
-    <div className="mt-20 container px-2 md:px-4 mb-64">
-      {/* <div className="flex justify-between items-center my-6 sticky top-20">
-        <h2 className="text-xl flex font-bold flex-1">Available Players</h2>
-        
-      </div> */}
+    <div className="mt-20 container md:px-4 mb-64">
       <h2 className="text-xl w-fit flex font-bold flex-1">Available Players</h2>
 
-      <div className="flex w-fit mt-7 md:mt0 md:-mt-10 mb-10 ml-auto justify-end sticky top-20 h-fit">
+      <div className="flex w-fit mt-7 md:mt0 md:-mt-10 mb-10 ml-auto justify-end sticky top-20 h-fit z-20">
         <Button
           onClick={() => setIsSelectedOpen(false)}
           className={`rounded-l-md rounded-r-none ${
@@ -42,6 +38,7 @@ function Cards({
         <Selected
           selectedPlayer={selectedPlayer}
           handlePlayerRemove={handlePlayerRemove}
+          setIsSelectedOpen={setIsSelectedOpen}
         />
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 ">

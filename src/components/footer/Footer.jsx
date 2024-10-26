@@ -5,7 +5,7 @@ import { Input } from "../ui/input";
 function Footer() {
   return (
     <>
-      <div className="bg-[#06091A] relative">
+      <footer className="bg-[#06091A] relative">
         <div className="container px-4 pb-10 pt-60 md:pt-44 flex flex-col justify-center items-center">
           <div className="flex justify-start w-full md:justify-center">
             <img className="w-20" src={logo} alt="" />
@@ -51,10 +51,10 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="container z-30 absolute -top-40 mt-10">
+        <div className="container z-30 absolute left-1/2 -translate-x-1/2 -top-40 mt-10">
           <div className="md:w-4/5 mx-auto border rounded-lg p-3">
             <div
-              className="w-full mx-auto bg-white flex flex-col justify-center items-center border rounded-lg py-14 relative before:absolute before:top-0 before:-right-20 md:before:-right-10 before:w-40 before:h-40  before:bg-yellow-200 before:blur-3xl before:rotate-45 after:absolute after:bottom-0 after:-left-20 md:after:-left-10 after:w-40 after:h-40 after:bg-blue-200 after:rotate-45 after:blur-3xl overflow-hidden text-center px-4"
+              className="w-full mx-auto bg-white flex flex-col justify-center items-center border rounded-lg py-14 relative before:absolute before:top-0 before:-right-20 md:before:-right-10 before:w-40 before:h-40  before:bg-yellow-200 before:blur-3xl before:rotate-45 after:absolute after:bottom-0 after:-left-20 md:after:-left-10 after:w-40 after:h-40 after:bg-blue-200 after:rotate-45 after:blur-3xl overflow-hidden text-center px-4 bg-no-repeat bg-cover"
               style={{ backgroundImage: `url(${bg})` }}
             >
               <h2 className="font-bold text-2xl">
@@ -72,7 +72,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

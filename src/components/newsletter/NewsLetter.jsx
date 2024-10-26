@@ -2,7 +2,7 @@ import bg from "@/assets/bg-shadow.png";
 import { Input } from "../ui/input";
 function NewsLetter() {
   return (
-    <div className="container z-30 absolute -top-20 mt-10">
+    <div className="container z-30 absolute left-1/2 -translate-x-1/2 transform -top-20 mt-10">
       <div
         className="w-4/5 mx-auto bg-white flex flex-col justify-center items-center border rounded-md py-14 text-center"
         style={{ backgroundImage: `url(${bg})` }}

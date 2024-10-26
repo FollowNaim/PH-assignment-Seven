@@ -58,7 +58,7 @@ function PlayerCard({ player, handPlayerAdd }) {
               <span>{rating}</span>
             </div>
             <div className="flex items-center justify-between">
-              <h4 className="font-semibold">Left Hand Bat</h4>
+              <h4 className="font-semibold">Batting Position</h4>
               <p className="text-black/70">{batting_style}</p>
             </div>
             <div className="flex items-center justify-between">
